@@ -1,0 +1,22 @@
+{
+  "name": "web-react",
+  "version": "1.0.0",
+  "description": "demo reactjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ilya.zadorozhny",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-eslint": "^4.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-less": "^3.3.2",
+    "gulp-rev": "^8.0.0"
+  },
+  "dependencies": {}
+}
