@@ -1,7 +1,7 @@
 {
-  "name": "web-react",
+  "name": "gulp-demo",
   "version": "1.0.0",
-  "description": "demo reactjs",
+  "description": "gulp4 demo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
