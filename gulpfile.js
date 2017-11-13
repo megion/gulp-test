@@ -10,6 +10,7 @@ var browserSync = require('browser-sync').create();
 var eslint = require('gulp-eslint');
 var cssnano = require('gulp-cssnano');
 var rev = require('gulp-rev');
+var babel = require("gulp-babel");
 
 var paths = {
     buildDir: 'build',
@@ -71,9 +72,11 @@ gulp.task('scripts', function (done) {
     return gulp.src(paths.scripts.src)
         .pipe(eslint())
         .pipe(eslint.format())
-    //.pipe(babel())
+        .pipe(gulpIf(isDevelopment, sourcemaps.init()))
+        .pipe(babel())
     //.pipe(uglify())
     //.pipe(concat('main.min.js'))
+        .pipe(gulpIf(isDevelopment, sourcemaps.write('.')))
         .pipe(gulp.dest(paths.scripts.dest));
 });
 
