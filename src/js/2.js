@@ -135,4 +135,8 @@ function moneyRound(x) {
     return y2;
 }
 
+import {myfunc1} from "./1";
+
+myfunc1();
+
 
