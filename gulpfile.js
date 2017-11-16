@@ -72,11 +72,11 @@ gulp.task('scripts', function (done) {
     return gulp.src(paths.scripts.src)
         .pipe(eslint())
         .pipe(eslint.format())
-        //.pipe(gulpIf(isDevelopment, sourcemaps.init()))
+        .pipe(gulpIf(isDevelopment, sourcemaps.init()))
         .pipe(babel())
     //.pipe(uglify())
     //.pipe(concat('main.min.js'))
-        //.pipe(gulpIf(isDevelopment, sourcemaps.write('.')))
+        .pipe(gulpIf(isDevelopment, sourcemaps.write('.')))
         .pipe(gulp.dest(paths.scripts.dest));
 });
 

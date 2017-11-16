@@ -2,7 +2,7 @@
 
 let a = 5;
 function myfunc1() {
-    console.log(a);
+    console.log(`hello world ${a} test `);
 }
 
 let inc = x => x+1;
