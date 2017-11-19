@@ -7,6 +7,6 @@ function myfunc1() {
 
 let inc = x => x+1;
 
-alert( inc(1) ); // 2
+console.log(`inc function call result ${inc(1)} test `);
 
 export {myfunc1};
