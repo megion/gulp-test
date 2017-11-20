@@ -19,13 +19,6 @@
         "gulp-eslint": "^4.0.0",
         "gulp-if": "^2.0.2",
         "gulp-less": "^3.3.2",
-        "gulp-rev": "^8.0.0",
-        "jasmine-core": "^2.8.0",
-        "karma": "^1.7.1",
-        "karma-chrome-launcher": "^2.2.0",
-        "karma-jasmine": "^1.1.0"
-    },
-    "dependencies": {
-        "angular": "1.2.27"
+        "gulp-rev": "^8.0.0"
     }
 }
