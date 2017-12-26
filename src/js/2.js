@@ -33,14 +33,19 @@ console.log(badLine);
 
 import {myfunc1} from "./1";
 import {moneyRound} from "./1";
+import {epsEqu} from "./1";
+import {decimalRound} from "./1";
 
 myfunc1();
 
 var v1 = moneyRound(5.794999999999999);
 console.log(`v1: ${v1}`);
 
+// 4.794 999 999 999 998 (15 fractions)
 var v2 = moneyRound(4.794999999999998);
 console.log(`v2: ${v2}`);
 
-window.moneyRound = moneyRound
+window.moneyRound = moneyRound;
+window.epsEqu = epsEqu;
+window.decimalRound = decimalRound;
 

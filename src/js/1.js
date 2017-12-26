@@ -58,20 +58,18 @@ function moneyRound(x) {
         return x;
     }
     // first round for correction erro float number
+    // we have number with max 12 decimal number, so round to 12 decimal 
+    // and skip other decimals therefore, the calculation error will be fixed.
+    //
+    // For example it fix calculation error for number represented by as:
+    // x.xxx xxx xxx xxx 99x
     var y1 = decimalRound(x, -12); 
-    var y2;
-    if(epsEqu(x, y1)) {
-        // second round for money round
-        y2 = decimalRound(y1, -2); 
-    } else {
-        // first round has error so exclude first round
-        // for example, this error will happen if x = 6.744999999999899 where 
-        // (the digit 8 in position 13) 
-        //console.warn("first round has error:", x, y1);
-        y2 = decimalRound(x, -2);  
-    }
+    var y2 = decimalRound(y1, -2);
     return y2;
 }
 
 export {myfunc1};
 export {moneyRound};
+export {epsEqu};
+export {decimalRound};
+
